@@ -10,7 +10,7 @@ export default defineConfig({
     mdx({
       providerImportSource: '@mdx-js/react',
     }),
-    ssr({ prerender: true }),
+    ssr(),
   ],
   resolve: {
     alias: {
