@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: 8seneca-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: 8seneca-server
+  template:
+    metadata:
+      labels:
+        app: 8seneca-server
+    spec:
+      containers:
+      - name: 8seneca-server
+        image: nghiadangfs/8seneca-server:latest
+        ports:
+        - containerPort: 3000

@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "types": ["vite/client"],
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "#root/*": ["./src/*"],
+      "#root/templates/*": ["./src/templates/*"],
+      "#root/assets/*": ["./src/assets/*"],
+      "#root/components/*": ["./src/components/*"],
+      "#root/constants/*": ["./src/constants/*"],
+      "#root/hooks/*": ["./src/hooks/*"],
+      "#root/libs/*": ["./src/libs/*"],
+      "#root/providers/*": ["./src/providers/*"],
+      "#root/routes/*": ["./src/routes/*"],
+      "#root/stores/*": ["./src/stores/*"],
+      "#root/utils/*": ["./src/utils/*"],
+      "#root/pages/*": ["./src/pages/*"],
+      "#root/features/*": ["./src/features/*"]
+    }
+  },
+  "ts-node": {
+    "transpileOnly": true,
+    "esm": true,
+    "compilerOptions": {
+      "moduleResolution": "Node16"
+    }
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
